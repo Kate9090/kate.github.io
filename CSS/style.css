@@ -1,0 +1,275 @@
+.body{
+margin: 0;
+padding: 0;
+}
+
+.navbar{
+min-width: 1000px;
+}
+
+.navbar .logo{
+    position: relative;
+  float: left;
+  padding-left: 190px;
+}
+
+.navbar-logo a{
+    position: absolute;
+}
+
+.logo h1{
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 2%;
+}
+
+.logo p{
+  margin-top: -5%;
+  padding: 0;
+}
+
+.navbar .tel{
+    position: relative;
+  float:right;
+  padding-right: 10px;
+}
+
+.navbar-tel a{
+  float: right;
+  margin-top: 30px;
+margin-right: 10px;
+}
+
+.navbar:after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.main-menu:after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.main-menu{
+  background-color: #424242;
+  color: #ffffff;
+  padding-left:100px;
+  min-width: 1000px;
+}
+
+.main-menu  li{
+  display: inline-block;
+  padding-right: 2%;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.goods .column-left{
+float: left;
+position: relative;
+margin-right: 20px;
+width: 30%;
+}
+.goods .column-right{
+  float: left;
+  position: relative;
+margin-right: 10px;
+width: 60%;
+margin-left: 10px;
+}
+.column-right .abilities{
+float: left;
+position: relative;
+  width: 40%;
+  margin-right: 10px;
+}
+.column-right .legend{
+  float: left;
+  position: relative;
+    width: 55%;
+    text-align: left;
+}
+.goods:after{
+  display: table;
+  clear: both;
+  content: "";
+
+}
+.characteristics .left{
+  float: left;
+  position: relative;
+    width: 45%;
+    text-align: left;;
+}
+.characteristics .right{
+  float: right;
+  position: relative;
+    width: 45%;
+    text-align: left;;
+}
+.characteristics:after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.benefits .left{
+  float: left;
+  position: relative;
+    width: 45%;
+    text-align: left;;
+}
+.benefits .right{
+  float: right;
+  position: relative;
+    width: 45%;
+    text-align: left;;
+}
+.benefits:after{
+  display: table;
+  clear: both;
+  content: "";
+}
+.review div{
+  margin: 0;
+  padding: 0;
+}
+.reviews li{
+  display: inline-block;
+  margin:  0%;
+}
+.rew-one p, .rew-two p{
+  margin: 0;
+  padding: 0;
+  }
+  .rew-one{
+    padding-bottom:  2%;
+  }
+.reviews{
+  float: left;
+}
+.reviews ul{
+  padding-left: 0%;
+}
+.reviews:after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.rew-name input{
+  width: 20%;
+}
+
+.rew-yourReview li{
+  display: inline-block;
+  margin:  0%;
+  padding: 0%;
+}
+.rew-yourReview ul{
+  padding: 0%;
+  margin: 0;
+}
+.rew-yourReview textarea{
+  width: 80%;
+}
+.rew-but{
+  padding-top: 2%;
+}
+table{
+  width: 80%;
+}
+.chek{
+  vertical-align: top;
+}
+
+.tabs {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 0px;
+  margin: 0 auto;
+}
+.wide input, .wide textarea, .wide p{
+  width: 70%;
+
+}
+.wide .chek input{
+  width: 5%;
+  padding-left: 0;
+    border: 1px solid black;
+      text-align: left;
+}
+.to-top {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+/* стили секций с содержанием */
+section #content1,
+ section #content2 {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* стили вкладок (табов) */
+.tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+}
+/* шрифт-иконки от Font Awesome в формате Unicode */
+.tabs label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.tabs label[for*="1"]:before {
+  content: "\f19a";
+}
+.tabs label[for*="2"]:before {
+  content: "\f17a";
+}
+
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* стили для активной вкладки */
+.tabs input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 1px solid #009933;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+/* медиа запросы для различных типов носителей */
+@media screen and (max-width: 680px) {
+  .tabs label {
+    font-size: 0;
+  }
+
+  .tabs label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tabs label {
+    padding: 15px;
+  }
+}
